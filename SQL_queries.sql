@@ -66,3 +66,55 @@ ADD COLUMN month_name VARCHAR(10);
 
 UPDATE sales
 SET month_name = MONTHNAME(date);
+
+-- Generic --
+-- how many unique cities and Brances does the data have?
+
+SELECT DISTINCT 
+	   city FROM sales;
+
+SELECT DISTINCT 
+	   branch FROM sales;
+
+-- In which cities are branches located
+SELECT DISTINCT 
+	   city, branch FROM sales;
+
+-- ------------- Product -------------------------
+-- How Many unique product lines does the data have?
+
+SELECT 
+COUNT(DISTINCT product_line) FROM sales;
+
+-- what is the most common payment method ?
+
+SELECT payment_method,
+   COUNT(payment_method)AS CNT
+FROM sales 
+GROUP BY payment_method
+ORDER BY CNT DESC;
+
+-- What is the most selling product line?
+SELECT product_line,
+   COUNT(product_line)AS CNT
+FROM sales 
+GROUP BY product_line
+ORDER BY CNT DESC;
+
+-- what is the total revenue by month?
+
+SELECT
+    month_name AS month,
+    SUM(total) AS total_revenue
+FROM sales
+GROUP BY month_name 
+ORDER BY total_revenue DESC;
+
+-- What month had the largest COGS (cost of goods sold) ------
+
+SELECT
+    month_name AS month,
+    SUM(COGS) AS COGS
+FROM sales
+GROUP BY month_name 
+ORDER BY COGS DESC;
