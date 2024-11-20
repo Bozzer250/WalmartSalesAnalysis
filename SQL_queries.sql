@@ -44,4 +44,25 @@ SET time_of_day = (
          ELSE "Evining"
     END
 );
-m
+
+-- day_name --
+
+SELECT date, 
+DAYNAME (date) FROM sales;
+
+ALTER TABLE sales 
+ADD COLUMN day_name VARCHAR(10);
+
+UPDATE sales
+SET day_name = DAYNAME(date);
+
+-- month_name --
+
+SELECT date,
+MONTHNAME(date) FROM sales;
+
+ALTER TABLE sales 
+ADD COLUMN month_name VARCHAR(10);
+
+UPDATE sales
+SET month_name = MONTHNAME(date);
