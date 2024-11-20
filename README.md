@@ -12,11 +12,11 @@ The dataset was obtained from the [Walmart Recruiting - Store Sales Forecasting]
 
 |Column	| Description	| Data Type |
 | ----------- | ----------- |----------- |
-|invoice_id	Invoice of the sales made	VARCHAR(30)|
+|invoice_id	| Invoice of the sales made	| VARCHAR(30)|
 | ----------- | ----------- |----------- |
-|branch	Branch at which sales were made	VARCHAR(5)|
+|branch	|Branch at which sales were made	|VARCHAR(5)|
 | ----------- | ----------- |----------- |
-|city	The location of the branch	VARCHAR(30)|
+|city |	The location of the branch	| VARCHAR(30)|
 
 |customer_type	The type of the customer	VARCHAR(30)|
 | ----------- | ----------- |----------- |
