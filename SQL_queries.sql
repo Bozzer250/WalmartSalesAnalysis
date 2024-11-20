@@ -118,3 +118,58 @@ SELECT
 FROM sales
 GROUP BY month_name 
 ORDER BY COGS DESC;
+
+-- What are product line had the largest revenue --
+SELECT
+	product_line,
+    SUM(total) AS total_revenue
+FROM sales
+GROUP BY product_line
+ORDER BY total_revenue DESC;
+
+-- What is the city with the largest revenue?
+SELECT
+	branch,
+    city,
+    SUM(total) AS total_revenue
+FROM sales
+GROUP BY city, branch
+ORDER BY total_revenue DESC;
+
+-- what product line had the largest VAT?
+
+SELECT
+    product_line,
+    AVG(VAT) AS avg_tax
+FROM sales
+GROUP BY  product_line
+ORDER BY avg_tax DESC;
+
+-- Which branch sold more product than avergae product sold?
+
+SELECT 
+    branch,
+    SUM(quantity) AS qty
+FROM sales
+GROUP BY branch
+HAVING SUM(quantity) > (SELECT AVG(quantity) FROM sales);
+
+-- what is the most common product line by gender?
+
+SELECT
+    gender,
+    product_line,
+    COUNT(gender)AS total_cnt
+FROM sales
+GROUP BY gender, product_line
+ORDER BY total_cnt DESC;
+
+
+-- What is the average rating of each product line?
+
+SELECT
+    AVG(rating) AS avg_rating,
+    product_line
+FROM sales
+GROUP BY product_line
+ORDER BY avg_rating DESC;
