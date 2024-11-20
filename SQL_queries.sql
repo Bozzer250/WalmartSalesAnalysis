@@ -20,3 +20,28 @@ CREATE TABLE IF NOT EXISTS sales (
   rating FLOAT (2,1) NOT NULL
   
 );
+
+-- ------------------------------------------------------------- Feature Engineering --
+-- time_of_day
+
+SELECT 
+	time,
+    (CASE
+         WHEN `time`BETWEEN "00:00:00" AND "12:00:00" THEN "Morning"
+         WHEN `time`BETWEEN "12:00:00" AND "16:00:00" THEN "Afternoon"
+         ELSE "Evining"
+	 END
+    ) AS time_of_date
+FROM sales;
+
+ALTER TABLE sales ADD COLUMN time_of_day VARCHAR (20);
+
+UPDATE sales
+SET time_of_day = (
+    CASE
+         WHEN `time`BETWEEN "00:00:00" AND "12:00:00" THEN "Morning"
+         WHEN `time`BETWEEN "12:00:00" AND "16:00:00" THEN "Afternoon"
+         ELSE "Evining"
+    END
+);
+m
