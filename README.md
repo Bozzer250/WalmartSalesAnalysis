@@ -95,12 +95,13 @@ This analysis aims to uncover the different customers segments, purchase trends 
 # Code
 For all MySQL Query code, please check on [SQL_queries.sql](https://github.com/Bozzer250/WalmartSalesAnalysis/blob/main/SQL_queries.sql)
 
-```-- Create database
+```
+-- Create database
 CREATE DATABASE IF NOT EXISTS walmartSales;
 
 -- Create table
 CREATE TABLE IF NOT EXISTS sales(
-	invoice_id VARCHAR(30) NOT NULL PRIMARY KEY,
+    invoice_id VARCHAR(30) NOT NULL PRIMARY KEY,
     branch VARCHAR(5) NOT NULL,
     city VARCHAR(30) NOT NULL,
     customer_type VARCHAR(30) NOT NULL,
