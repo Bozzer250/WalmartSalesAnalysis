@@ -96,7 +96,7 @@ This analysis aims to uncover the different customers segments, purchase trends 
 For all MySQL Query code, please check on [SQL_queries.sql](https://github.com/Bozzer250/WalmartSalesAnalysis/blob/main/SQL_queries.sql)
 
 ```
-{-- Create database
+-- Create database
 CREATE DATABASE IF NOT EXISTS walmartSales;
 
 -- Create table
@@ -118,17 +118,10 @@ CREATE TABLE IF NOT EXISTS sales(
     gross_margin_pct FLOAT(11,9),
     gross_income DECIMAL(12, 4),
     rating FLOAT(2, 1)
-);}
-
+);
 ```
 
-```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
+
 
 
 
