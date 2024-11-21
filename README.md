@@ -122,6 +122,14 @@ CREATE TABLE IF NOT EXISTS sales(
 
 ```
 
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
+
 
 
 
