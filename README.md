@@ -90,7 +90,7 @@ This analysis aims to uncover the different customers segments, purchase trends 
 7. Which time of the day do customers give most ratings?
 8. Which time of the day do customers give most ratings per branch?
 9. Which day fo the week has the best avg ratings?
-10. Which day of the week has the best average ratings per branch ?
+10. Which day of the week has the best average ratings per branch?
 
 # Code
 For all MySQL Query code, please check on [SQL_queries.sql](https://github.com/Bozzer250/WalmartSalesAnalysis/blob/main/SQL_queries.sql)
