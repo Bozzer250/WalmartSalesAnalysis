@@ -38,7 +38,7 @@ Conduct analysis on the data to understand the different product lines, the prod
 This analysis aims to answer the question of the sales trends of product. The result of this can help use measure the effectiveness of each sales strategy the business applies and what modificatoins are needed to gain more sales.
 
 3. Customer Anysis
-This analysis aims to uncover the different customers segments, purchase trends and the profitability of each customer segment..
+This analysis aims to uncover the different customers segments, purchase trends and the profitability of each customer segment.
 
 # Approach Used
 
