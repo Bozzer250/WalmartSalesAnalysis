@@ -57,7 +57,7 @@ This analysis aims to uncover the different customers segments, purchase trends 
 
 **4. Conclusion:**
 
-# Business Questions To Answer....
+# Business Questions To Answer...
 ## Generic Question
 1. How many unique cities does the data have?
 2. In which city is each branch?
