@@ -29,7 +29,7 @@ SELECT
 FROM sales;
 
 
--- Add the time_of_day column
+-- Add the time_of_day column..
 SELECT
 	time,
 	(CASE
